@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+h1 {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: capitalize;
+  background: linear-gradient(to right, red, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0 0 60px rgba(255, 0, 0, 0.457);
+  animation: anime 1s infinite alternate;
+}
+
+@keyframes anime {
+  100% {
+    text-shadow: 0 0 60px rgba(21, 0, 255, 0.457);
+  } 
+}
+
+@media (min-width: 850px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1068px) {
+  h1 {
+    font-size: 80px;
+  }
+}
